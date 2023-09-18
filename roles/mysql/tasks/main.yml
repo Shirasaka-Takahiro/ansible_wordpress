@@ -6,15 +6,19 @@
 
 - name: install repository for mysql
   yum:
-    name: https://repo.mysql.com//mysql80-community-release-el7-7.noarch.rpm
+    name: https://repo.mysql.com/mysql80-community-release-el7-9.noarch.rpm
     state: present
   ignore_errors: yes
 
 - name: install optional packages
   yum:
-    name: 
+    name:
       - MySQL-python
-    state: present
+    state: latest
+
+- name: Install PyMySQL
+  pip:
+    name: pymysql
 
 - name: install mysql community devel
   yum:

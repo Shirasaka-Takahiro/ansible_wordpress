@@ -1,15 +1,15 @@
 ---
 ##create user
-user_name: test1
-user_password: Test1!
+user_name: test2
+user_password: Test2!
 #user_groups: test1
 
 ##change hostname
-host_name: test-web01
+host_name: test-web02
 
 ##Apache
-serveradmin: test@example.com
-domain_name: test.com
+serveradmin: test2@example.com
+domain_name: onya-lab.site
 
 ##MySQL
 root_password: Testtest991!

@@ -3,7 +3,7 @@
   become: true
   user: vagrant
   roles:
-    - access_test
+    #- access_test
     - common/yum_update
     - common/firewalld
     - common/hostname
