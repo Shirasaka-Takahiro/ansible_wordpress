@@ -1,9 +1,9 @@
 ---
 - hosts: target_hosts
   become: true
-  user: vagrant
+  user: ansible-user
   roles:
-    #- access_test
+    - access_test
     - common/yum_update
     - common/firewalld
     - common/hostname
